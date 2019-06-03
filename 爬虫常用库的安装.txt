@@ -1,0 +1,31 @@
+
+不翻墙可以使用
+1.urllib
+  import urllib
+  import urllib.request
+  urllib.request.urlopen('http://www.baidu.com')
+2.re
+  import re
+以上两个是python自带的库
+
+3.requests
+  pip3 install requests
+
+4.selenium 驱动浏览器的库，自动化测试的库 可以得到js渲染之后的页面
+  pip3 install selenium
+  //test
+  import selenium
+  from selenium import webdriver
+  driver = webdriver.Chrome()
+  //这里需要安装chromedriver  这里他将chromedriver.exe放到python下的Script文件夹下了（我不是很明白是不是一定要这么做） 注：chromedriver只有win32的版本
+
+4.phantomjs 无界面浏览器
+  搜索安装 配置path
+  from selenium import webdriver
+  driver = webdriver.PhantonJS()
+  driver.get('')
+  driver.page_source
+
+5.lxml
+  pip3 install lxml
+6.beautifulsoup
