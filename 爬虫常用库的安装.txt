@@ -29,3 +29,42 @@
 5.lxml
   pip3 install lxml
 6.beautifulsoup
+  pip3 install beautifulsoup4 安装第四个版本
+  引入
+  from bs4 import beautifulsoupsoup = BeautifulSoup('<html></html>, 'lxml')
+7.pyquery是一个网页解析库 作者认为比BeautifulSoup更加好用
+  pip3 install pyquery
+8.pymysql 存储库操作mysql的库 我理解可能类似jdbc？不知道瞎说的
+  事实证明就是和jdbc差不多的 
+  $ import pymysql
+  $ conn - pymysql.connect(host = 'localhost', user='root', password='root', port = 3306, db='abc')//这个就不解释了
+  $ cursor = conn.cursor()
+  $ cursor.cxecute('select * from emp')
+  $ cursor.fetchone() //执行这一句就会返回查询的结果
+9.pymongo
+  pip3 install pymongo//安装
+  $ import pymongo
+  $ client = pymongo.MongoClient('mongodb://localhost:27017')
+  $ db = client['newtestdb']
+  $ mycol = db['site']//集合名
+  $ mydict = {"":"","":""}//存储的数据
+  $ x = mycol.insert_ont(mydict)
+  $ print(x)
+  
+10.redis
+  pip3 install redis
+  $ import redis
+  $ r = redis.Resit('http://192.168.234.136', 6379)
+  $ r.set('name', '123')
+  $ r.get('name') // 返回123
+11.flask
+  pip3 install flask
+  https://dormousehole.readthedocs.io/en/latest/quickstart.html#id2 //中文文档 不知道翻墙能不能用
+
+12.django  web服务器框架
+  pip3 install django
+13.jupyter 类似记事本的东西
+  pip3 install jupyter
+
+
+  
