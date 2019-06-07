@@ -66,5 +66,8 @@
 13.jupyter 类似记事本的东西
   pip3 install jupyter
 
+  **jupyter新增
+  jupyter notebook 启动 （由于在jupyter安装在python的script目录下，已经配置过path可以直接启动）
+  这个很有用 可以运行一些可执行的代码
 
   
